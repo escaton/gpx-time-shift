@@ -1,0 +1,8 @@
+{
+    "name": "gpx-time-shift",
+    "main": "http://localhost:3000",
+    "node-remote": "localhost",
+    "webkit": {
+        "plugin": true
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "gpx-time-shift",
+  "description": "GUI for deleting git branches",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "author": "Boyma Fahnbulleh <boymanjor@icloud.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ampersand-app": "^1.0.4",
+    "ampersand-router": "^3.0.2",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "ejs-loader": "^0.2.1",
+    "hjs-webpack": "^2.13.1",
+    "nw": "~0.12.3",
+    "nw-builder": "^2.2.0",
+    "underscore": "^1.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boymanjor/nwjs-git-branch-delete.git"
+  },
+  "scripts": {
+    "start": "nw ./public/",
+    "start-prod": "nw ./build/",
+    "watch": "webpack-dev-server",
+    "build": "webpack --output-path build --optimize-dedupe",
+    "dist": "nwbuild -v 0.12.3 -p win32,win64,osx64 ./build",
+    "test": "standard"
+  },
+  "dependencies": {
+    "gpx-shift-time": "^1.0.0"
+  }
+}
