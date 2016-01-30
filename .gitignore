@@ -3,3 +3,6 @@ node_modules
 npm-debug.log
 ._*
 build
+!build/package.json
+public
+!public/package.json

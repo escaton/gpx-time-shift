@@ -4,5 +4,17 @@
     "node-remote": "localhost",
     "webkit": {
         "plugin": true
+    },
+    "window": {
+        "title": "Gpx time shift",
+        "toolbar": true,
+        "frame": true,
+        "width": 300,
+        "height": 550,
+        "position": "mouse",
+        "min_width": 300,
+        "min_height": 550,
+        "max_width": 300,
+        "max_height": 550
     }
 }

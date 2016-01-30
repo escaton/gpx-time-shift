@@ -12,18 +12,14 @@ var config = getConfig({
     }
 })
 
-// target property not working for node-webkit
 config.target = 'node-webkit';
 
-// console.log(config.plugins);
-
-// return;
-
-// Adds new plugin to generated config which exposes underscore.js globally
 config.plugins.push(
     new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
         _: "underscore"
     })
-)
+);
 
 module.exports = config
